@@ -1,0 +1,38 @@
+package com.concurrency.main;
+
+class Runner3 extends Thread{
+
+	@Override
+	public void run() {
+		for (int i = 0; i < 10; i++) {
+			System.err.println("Runner1 : " + i);
+		}		
+	}
+	
+}
+
+class Runner4 extends Thread{
+
+	@Override
+	public void run() {
+		for (int i = 0; i < 10; i++) {
+			System.out.println("Runner2 : " + i);
+		}		
+	}
+	
+}
+
+public class CreatingThread {
+
+	public static void main(String[] args) {
+
+		Runner3 r3 = new Runner3();
+		Runner4 r4 = new Runner4();
+		
+		r3.start();
+		r4.start();
+		
+
+	}
+
+}

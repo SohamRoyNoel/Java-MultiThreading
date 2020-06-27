@@ -1,0 +1,32 @@
+package com.concurrency.main;
+
+class Runner1 implements Runnable{
+
+	@Override
+	public void run() {
+		for (int i = 0; i < 10; i++) {
+			System.err.println("Runner1 : " + i);
+		}		
+	}
+	
+}
+
+class Runner2 implements Runnable{
+
+	@Override
+	public void run() {
+		for (int i = 0; i < 10; i++) {
+			System.err.println("Runner1 : " + i);
+		}		
+	}
+	
+}
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
