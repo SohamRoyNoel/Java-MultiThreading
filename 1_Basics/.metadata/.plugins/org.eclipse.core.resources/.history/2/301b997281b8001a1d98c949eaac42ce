@@ -1,0 +1,43 @@
+package com.concurrency.main;
+/*
+ * 
+ * Thread Join : waits for the other thread to be completed before finishing MAIN thread;
+ * Ex: if thread1 is downloading image from web and thread 2 is facebook; its worthless to show "Download Complete" even before images are downloaded from source 
+ * 
+ * */
+class Runner5 extends Thread{
+
+	@Override
+	public void run() {
+		for (int i = 0; i < 10; i++) {
+			System.err.println("Runner1 : " + i);
+		}		
+	}
+	
+}
+
+class Runner6 extends Thread{
+
+	@Override
+	public void run() {
+		for (int i = 0; i < 10; i++) {
+			System.out.println("Runner2 : " + i);
+		}		
+	}
+	
+}
+public class ThreadJoins {
+
+	public static void main(String[] args) {
+		
+		Runner5 r5 = new Runner5();
+		Runner6 r6 = new Runner6();
+		
+		r5.start();
+		r6.start();
+		
+		System.err.println("Download Finished");
+
+	}
+
+}

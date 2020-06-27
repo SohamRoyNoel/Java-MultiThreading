@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.Runnable"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="com.concurrency.main.Runner1"/>
 <fullyQualifiedTypeName name="com.concurrency.main.Runner2"/>
+<fullyQualifiedTypeName name="com.concurrency.main.Runner3"/>
+<fullyQualifiedTypeName name="com.concurrency.main.Games"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
 </qualifiedTypeNameHistroy>

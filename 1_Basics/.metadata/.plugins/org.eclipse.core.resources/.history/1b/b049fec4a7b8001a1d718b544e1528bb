@@ -1,0 +1,23 @@
+package com.concurrency.main;
+
+class Processor {
+
+	public void producer() throws InterruptedException {
+
+	}
+
+	public void consumer() throws InterruptedException {
+
+	}
+
+}
+
+
+public class WaitNotify {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

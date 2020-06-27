@@ -1,0 +1,26 @@
+package com.concurrency.main;
+
+
+public class ThreadJoins2 {
+
+	public static void main(String[] args) {
+		
+		Runner5 r5 = new Runner5();
+		Runner6 r6 = new Runner6();
+		
+		r5.start();
+		r6.start();
+		
+		try {
+			r5.join();
+			r6.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		
+		System.err.println("Download Finished");
+
+	}
+
+}

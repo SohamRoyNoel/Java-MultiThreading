@@ -1,0 +1,15 @@
+package com.concurrency.main;
+/*
+ * 
+ * Thread Join : waits for the other thread to be completed before finishing MAIN thread;
+ * Ex: if thread1 is downloading image from web and thread 2 is facebook; its worthless to show "Download Complete" even before images are downloaded from source 
+ * 
+ * */
+public class ThreadJoins {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

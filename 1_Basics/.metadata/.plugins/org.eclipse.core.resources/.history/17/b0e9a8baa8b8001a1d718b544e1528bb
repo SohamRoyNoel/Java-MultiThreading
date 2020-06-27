@@ -1,0 +1,30 @@
+package com.concurrency.main;
+
+class Processor {
+
+	public void producer() throws InterruptedException {
+		
+		// this refers to the class itself
+		synchronized (this) {
+			System.err.println("Produce Method invoked");
+			wait(); // Lock
+			System.out.println("Again Producer");
+		}
+
+	}
+
+	public void consumer() throws InterruptedException {
+
+	}
+
+}
+
+
+public class WaitNotify {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

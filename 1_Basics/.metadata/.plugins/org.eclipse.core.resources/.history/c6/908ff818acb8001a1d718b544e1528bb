@@ -1,0 +1,16 @@
+package com.concurrency.main;
+
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.Lock;
+
+
+/*
+ * Lock can be used as a replacement of Synchronized  
+ * */
+public class Lock {
+
+	private static int counter = 0;
+	private static Lock lock = new ReentrantLock();
+	
+	
+}

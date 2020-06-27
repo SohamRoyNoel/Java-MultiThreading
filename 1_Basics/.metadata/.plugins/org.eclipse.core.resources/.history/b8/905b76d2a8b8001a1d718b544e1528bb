@@ -1,0 +1,42 @@
+package com.concurrency.main;
+
+class Processor {
+
+	public void producer() throws InterruptedException {
+		
+		// this refers to the class itself
+		synchronized (this) {
+			System.err.println("Produce Method invoked");
+			wait(); // Lock
+			System.out.println("Again Producer");
+		}
+
+	}
+
+	public void consumer() throws InterruptedException {
+		
+		Thread.sleep(1000);
+		
+		synchronized (this) {
+			System.out.println("Consumer Method Invoked");
+			notify(); // Notify notifies all LOCKED THread that it can wake up
+			/*
+			 * Notify is non deterministic : that means it will never Guarantee which locked thread to wake up. 
+			 * 
+			 * */
+		}
+		
+	}
+
+}
+
+
+public class WaitNotify {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

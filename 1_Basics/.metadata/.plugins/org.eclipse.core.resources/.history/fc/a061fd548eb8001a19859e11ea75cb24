@@ -1,0 +1,22 @@
+package com.concurrency.main;
+
+public class Synchronization {
+
+	public static int counter = 0;
+
+
+	public static void process1() {
+
+	}
+
+	public static void process1() {
+
+	}
+
+
+	public static void main(String[] args) {
+
+
+	}
+
+}
